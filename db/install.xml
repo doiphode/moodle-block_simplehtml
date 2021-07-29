@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="blocks/simplehtml/db" VERSION="20210420" COMMENT="XMLDB file for Moodle blocks/simplehtml"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+    <TABLES>
+
+        <TABLE NAME="block_simplehtml" COMMENT="">
+            <FIELDS>
+                <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+                <FIELD NAME="blockid" TYPE="int" LENGTH="10" DEFAULT="0" NOTNULL="true" SEQUENCE="false" COMMENT=""/>
+                <FIELD NAME="pagetitle" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" COMMENT=""/>
+                <FIELD NAME="displaytext" TYPE="text" NOTNULL="false" SEQUENCE="false" COMMENT=""/>
+                <FIELD NAME="format" TYPE="int" LENGTH="3" DEFAULT="0" NOTNULL="true" SEQUENCE="false" COMMENT=""/>
+                <FIELD NAME="filename" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" COMMENT=""/>
+                <FIELD NAME="picture" TYPE="int" LENGTH="2" NOTNULL="false" SEQUENCE="false" COMMENT=""/>
+                <FIELD NAME="description" TYPE="text" NOTNULL="false" SEQUENCE="false" COMMENT=""/>
+                <FIELD NAME="displaypicture" TYPE="int" LENGTH="1" DEFAULT="0" NOTNULL="true" SEQUENCE="false"
+                       COMMENT=""/>
+                <FIELD NAME="displaydate" TYPE="int" LENGTH="10" DEFAULT="0" NOTNULL="true" SEQUENCE="false"
+                       COMMENT=""/>
+
+            </FIELDS>
+            <KEYS>
+                <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+            </KEYS>
+
+        </TABLE>
+
+    </TABLES>
+</XMLDB>
